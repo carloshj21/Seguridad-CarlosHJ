@@ -1,0 +1,17 @@
+body
+{
+	font-family:Arial;
+	font-size:20px;
+	padding:2em;
+	padding-top:9em;
+	padding-bottom:9em;
+	background-color:moccasin;
+}
+fieldset
+{
+	background-color:white;
+}
+h1
+{
+	text-align:center;
+}
