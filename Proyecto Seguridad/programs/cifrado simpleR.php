@@ -7,7 +7,7 @@
 		$rev2=str_split($rev);
 		for($i=0;$i<$len;$i++)
 		{
-			$arre[$i]=$rev2[$i]."#$0.1,2$3?4";
+			$arre[$i]="$.#-1".$rev2[$i]."4#$0.1,2$3?";
 			$cifrar=implode($arre);
 		}
 		return $cifrar;
@@ -19,6 +19,7 @@ echo"<!DOCTYPE html>
 		<head>
 			<title>Cifrado Simple</title>
 			<meta charset='UTF-8'/>
+			<link rel='stylesheet' type='text/css' href='../styles/resultados.css'/>
 		</head>
 		<body>";
 echo"		<h1>Tu número de cuenta es:</h1><br/>";
@@ -30,7 +31,9 @@ echo"		<h1>Tu número de cuenta es:</h1><br/>";
 			else
 				echo "El número de cuenta introducido es inválido.(Únicamente dígitos(9), sin guión)";
 echo"		<br/><br/><br/><br/><br/><br/>
-			<a href='cifrado simple.php'>Volver a intentarlo</a>
+			<div>
+				<a href='cifrado simple.php'>Volver a intentarlo</a>
+			</div>
 		</body>
 		</html>";
 ?>

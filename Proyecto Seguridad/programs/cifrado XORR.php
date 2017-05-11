@@ -17,6 +17,7 @@
 		<head>
 			<title>Cifrado XOR</title>
 			<meta charset='UTF-8'/>
+			<link rel='stylesheet' type='text/css' href='../styles/resultados.css'/>
 		</head>
 		<body>";
 echo"		<h1>Cifrado XOR de '".$carac."'</h1>";
@@ -25,7 +26,9 @@ echo"		<h1>Cifrado XOR de '".$carac."'</h1>";
 			else
 echo"			Valor introducido: Inválido";
 echo"		<br/><br/><br/><br/><br/><br/>";
-echo"		<a href='cifrado XOR.php'>Volver a intentarlo</a>
+echo"		<div>
+				<a href='cifrado XOR.php'>Volver a intentarlo</a>
+			</div>
 		</body>
 		</html>";
 ?>
