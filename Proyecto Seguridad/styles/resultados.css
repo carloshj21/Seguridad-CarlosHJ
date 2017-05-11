@@ -1,0 +1,26 @@
+body
+{
+	background-color:skyblue;
+	font-family:Arial;
+	font-size:25px;
+	padding:10%;
+	text-align:center;
+}
+h1
+{
+	color:darkblue;
+	font-family:Impact;
+	font-size:40px;
+	text-align:center;
+}
+div
+{
+	text-align:right;
+}
+a
+{
+	background-color:orange;
+	color:darkblue;
+	font-size:20px;
+	padding:1%;
+}

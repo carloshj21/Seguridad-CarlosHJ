@@ -1,0 +1,37 @@
+body
+{
+	background-color:skyblue;
+	border:double;
+	border-width:20px;
+	border-color:darkblue;
+	padding:10%;
+}
+h1
+{
+	color:darkblue;
+	font-family:Impact;
+	font-size:40px;
+	text-align:center;
+}
+form
+{
+	background-color:royalblue;
+	color:white;
+	font-size:20px;
+	padding:3%;
+}
+input
+{
+	font-size:15px;
+}
+div
+{
+	text-align:right;
+}
+a
+{
+	background-color:orange;
+	color:darkblue;
+	font-size:20px;
+	padding:1%;
+}

@@ -20,13 +20,16 @@ echo"<!DOCTYPE html>
 		<head>
 			<title>Función Módulo</title>
 			<meta charset='UTF-8'/>
+			<link rel='stylesheet' type='text/css' href='../styles/resultados.css'/>
 		</head>
 		<body>";
-echo"		<h2>".$n1."  %  ".$n2."  =</h2><br/><br/>";
+echo"		<h1>".$n1."  %  ".$n2."  =</h2><br/><br/>";
 			$a=modulo($n1,$n2);
 echo" 		<h1>".$a."</h1>";
 echo"		<br/><br/><br/>
-			<a href='funcion modulo.php'>Volver a intentarlo</a>
+			<div>
+				<a href='funcion modulo.php'>Volver a intentarlo</a>
+			</div>
 		</body>
 	</html>";
 	

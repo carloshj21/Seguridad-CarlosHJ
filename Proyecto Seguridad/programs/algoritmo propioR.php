@@ -23,6 +23,7 @@ echo"<!DOCTYPE html>
 		<head>
 			<title>Algoritmo Propio</title>
 			<meta charset='UTF-8'/>
+			<link rel='stylesheet' type='text/css' href='../styles/resultados.css'/>
 		</head>
 		<body>";
 echo"		<h1>Mensaje Original</h1>";
@@ -30,7 +31,9 @@ echo"		<h1>Mensaje Original</h1>";
 echo"		<h1>Mensaje Codificado</h1>";
 			echo $ab;
 echo"		<br/><br/><br/><br/><br/><br/>
-			<a href='algoritmo propio.php'>Volver a intentarlo</a>
+			<div>
+				<a href='algoritmo propio.php'>Volver a intentarlo</a>
+			</div>
 		</body>
 		</html>";
 ?>
