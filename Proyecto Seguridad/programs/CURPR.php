@@ -125,7 +125,7 @@ echo"<!DOCTYPE html>
 			$c16c=$c16*3;
 			$suma=$c1c+$c2c+$c3c+$c4c+$c5c+$c6c+$c7c+$c8c+$c9c+$c10c+$c11c+$c12c+$c13c+$c14c+$c15c+$c16c;
 			$modulo=$suma%10;
-			$modulo2=10-$suma%10;
+			$modulo2=10-$modulo%10;
 			//CURP con el último caracter ya real y verídico------------------------------------------
 			$curp2=$curp1.$modulo2;
 echo"		<fieldset>
