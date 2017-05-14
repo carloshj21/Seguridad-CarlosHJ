@@ -8,7 +8,7 @@ echo"<!DOCTYPE html>
 		</head>
 		<body>";
 echo"		<h1>Cifrado XOR</h1>
-			<form method='GET' action='cifrado XORR.php' align='center'>
+			<form method='POST' action='cifrado XORR.php' align='center'>
 				<label>Introduzca un caracter:</label><br/><br/>
 				<input type='text' name='caracter' size='1' maxlength='1' required/>
 				<br/><br/>

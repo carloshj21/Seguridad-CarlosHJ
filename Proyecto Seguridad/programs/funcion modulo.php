@@ -8,7 +8,7 @@
 		</head>
 		<body>";
 echo"		<h1>Función Módulo</h1>
-			<form method='GET' action='funcion moduloR.php' align='center'>
+			<form method='POST' action='funcion moduloR.php' align='center'>
 				<label>Introduzca un número entero:</label>
 				<input type='number' name='numero1' required/>
 				<br/><br/>

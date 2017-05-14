@@ -1,0 +1,45 @@
+body
+{
+	background-color:skyblue;
+	padding:5%;
+}
+h1
+{
+	font-size:50px;
+	text-align:center;
+}
+form
+{
+	font-family:Arial;
+	font-size:25px;
+	text-align:center;
+}
+label
+{
+	background-color:navy;
+	color:white;
+	padding-left:80px;
+	padding-right:80px;
+}
+span
+{
+	font-size:20px;
+	text-align:center;
+}
+input
+{
+	font-family:Arial;
+	font-size:25px;
+	text-align:center;
+}
+div
+{
+	font-family:Arial;
+	font-size:30px;
+	text-align:right;
+}
+a
+{
+	color:navy;
+	text-decoration:none;
+}

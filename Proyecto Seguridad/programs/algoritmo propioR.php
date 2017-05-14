@@ -1,5 +1,7 @@
 <?php
-	$texto=$_GET['texto'];
+	$texto=$_POST['texto'];
+	$val='/^[a-z]{1,}$/';
+	$valtexto=preg_match($val,$texto);
 	$arre=array('a' => 'm','b' => 'q','c' => 'n','d' => 'w','e' => 'b','f' => 'e','g' => 'v','h' => 'r','i' => 'c','j' => 't','k' => 'x',
 				'l' => 'y','m' => 'z','n' => 'u','o' => 'l','p' => 'i','q' => 'k','r' => 'o','s' => 'j','t' => 'p','u' => 'h','v' => 'a',
 				'w' => 'g','x' => 's','y' => 'f','z' => 'd');
@@ -26,14 +28,24 @@ echo"<!DOCTYPE html>
 			<link rel='stylesheet' type='text/css' href='../styles/resultados.css'/>
 		</head>
 		<body>";
-echo"		<h1>Mensaje Original</h1>";
-			echo $ac."<br/><br/>";
-echo"		<h1>Mensaje Codificado</h1>";
-			echo $ab;
-echo"		<br/><br/><br/><br/><br/><br/>
-			<div>
-				<a href='algoritmo propio.php'>Volver a intentarlo</a>
-			</div>
-		</body>
+			if($valtexto==1)
+			{
+echo"			<h1>Mensaje Original</h1>";
+				echo $ac."<br/><br/>";
+echo"			<h1>Mensaje Codificado</h1>";
+				echo $ab;
+echo"			<br/><br/><br/><br/><br/><br/>
+				<div>
+					<a href='algoritmo propio.php'>Volver a intentarlo</a>
+				</div>";				
+			}
+			else
+			{
+				echo"Texto introducido no válido
+				<div>
+					<a href='algoritmo propio.php'>Volver a intentarlo</a>
+				</div>";
+			}
+echo"	</body>
 		</html>";
 ?>

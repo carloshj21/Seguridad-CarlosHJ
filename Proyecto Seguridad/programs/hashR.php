@@ -1,5 +1,5 @@
 <?php
-	$numero=$_GET['numero'];
+	$numero=$_POST['numero'];
 	$vali='/^[0-9]{8}/';
 	$num=preg_match($vali,$numero);
 	function firma($num)

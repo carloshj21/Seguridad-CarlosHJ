@@ -8,7 +8,7 @@ echo"<!DOCTYPE html>
 		</head>
 		<body>";
 echo"		<h1>Algoritmo de firma digital propio</h1>
-			<form method='GET' action='hashR.php' align='center'>
+			<form method='POST' action='hashR.php' align='center'>
 				<label>Introduzca un número: </label><br/><br/>
 				<input type='number' name='numero' placeholder='Mínimo 8 dígitos' required/><br/><br/>
 				<input type='submit' value='Generar hash'/>";

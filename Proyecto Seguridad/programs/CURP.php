@@ -14,7 +14,7 @@
 			<link rel='stylesheet' type='text/css' href='../styles/formu.css'/>
 		</head>
 		<body>
-			<form method='GET' action='CURPR.php'>
+			<form method='POST' action='CURPR.php'>
 			<fieldset>
 				<legend>Datos personales</legend>
 				<label>Nombre:</label>

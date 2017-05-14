@@ -35,7 +35,7 @@ echo"<!DOCTYPE html>
 				return $en;
 			}
 			//Nombre---------------------------------------------------------------
-			$nom=$_GET['nom'];
+			$nom=$_POST['nom'];
 			$nom1=array('Á'=>'A','É'=>'E','Í'=>'I','Ó'=>'O','Ú'=>'U','á'=>'a','é'=>'e','í'=>'i','ó'=>'o','ú'=>'u');
 			$nom2=array_keys($nom1);
 			$nom3=$nom;
@@ -56,16 +56,16 @@ echo"<!DOCTYPE html>
 			$x3=ca1($a2);
 			$x4=ca1($n);
 			//Fecha nacimiento--------------------------------------------------------
-			$fecha=$_GET['fechnac'];
+			$fecha=$_POST['fechnac'];
 			$año2=substr($fecha,0,4);
 			$año=substr($fecha,2,2);
 			$mes=substr($fecha,5,2);
 			$dia=substr($fecha,8,2);
 			//Sexo---------------------------------------------------------------------
-			$sexo=$_GET['sexo'];
+			$sexo=$_POST['sexo'];
 			$a=substr($sexo,0,1);
 			//Lugar nacimiento---------------------------------------------------------
-			$lugar=$_GET['lugar'];
+			$lugar=$_POST['lugar'];
 			//Código Único  (17)-------------------------------------------------------
 			if($año2<2000)
 				$cod1=0;

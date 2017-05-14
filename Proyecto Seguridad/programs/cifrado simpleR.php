@@ -1,5 +1,5 @@
 <?php
-	$cuenta=$_GET['cuenta'];
+	$cuenta=$_POST['cuenta'];
 	function simple ($cad)
 	{
 		$rev=strrev($cad);

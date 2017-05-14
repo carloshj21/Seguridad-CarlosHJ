@@ -8,9 +8,9 @@ echo"<!DOCTYPE html>
 		</head>
 		<body>";
 echo"		<h1>Algoritmo Propio</h1>
-			<form method='GET' action='algoritmo propioR.php' align='center'>
+			<form method='POST' action='algoritmo propioR.php' align='center'>
 				<label>Introduzca un texto (preferentemente sin espacios): </label><br/><br/>
-				<input type='text' name='texto' size='100px' required/><br/><br/>
+				<input type='text' name='texto' size='100px' placeholder='Sólo minúsculas' required/><br/><br/>
 				<input type='submit'/>";
 echo"		</form>
 			<br/><br/><br/>

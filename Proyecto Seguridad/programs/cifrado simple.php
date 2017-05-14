@@ -8,7 +8,7 @@ echo"<!DOCTYPE html>
 		</head>
 		<body>";
 echo"		<h1>Cifrado Simple</h1>
-			<form method='GET' action='cifrado simpleR.php' align='center'>
+			<form method='POST' action='cifrado simpleR.php' align='center'>
 				<label>Introduzca su número de cuenta(sin guión): </label><br/><br/>
 				<input type='text' name='cuenta' required/>
 				<input type='submit'/>";
