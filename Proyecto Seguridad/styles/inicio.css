@@ -1,0 +1,43 @@
+body
+{
+	background-image:url('../resources/images/seguridad.jpg');
+	background-size:cover;
+	padding:3%;
+}
+h1
+{
+	background-color:white;
+	border:solid;
+	border-width:15px;
+	color:red;
+	font-family:Impact;
+	font-size:50px;
+	margin-bottom:0%;
+	text-align:center;
+}
+h3
+{
+	background-color:white;
+	color:red;
+	font-family:Arial;
+	font-size:25px;
+	padding:1%;
+	text-align:center;
+}
+div
+{
+	background-color:white;	
+	border:solid;
+	border-width:10px;
+	border-color:red;
+	font-family:Impact;
+	font-size:20px;
+	margin-left:2%;
+	padding:4%;
+	margin-right:70%;
+}
+a
+{
+	color:red;
+	text-decoration:none;
+}

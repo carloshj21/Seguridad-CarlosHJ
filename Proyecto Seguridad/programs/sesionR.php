@@ -20,8 +20,12 @@ echo"<!DOCTYPE html>
 		<head>
 			<title>Inicio de sesión</title>
 			<meta charset='UTF-8'/>
+			<link rel='stylesheet' type='text/css' href='../styles/sesion.css'/>
 		</head>
-		<body>";
+		</head>
+		<body>
+			<img src='../resources/images/Iniciar sesion.png'/>
+			<br/><br/><br/><br/><br/><br/><br/>";
 			$conn=mysqli_connect('localhost','root','','seguridad');
 			if($conn)
 			{
@@ -37,30 +41,39 @@ echo"<!DOCTYPE html>
 						if($numCon==0)
 						{
 							echo"<h1>La contraseña introducida no es correcta</h1>";
-							echo"<a href='sesion.php'>Volver a intentarlo</a>";
+							echo"<br/><br/><br/><br/>";
+							echo"<div>";
+							echo"	<b><a href='sesion.php'>Volver a intentarlo</a></b>";
+							echo"</div>";
 						}
 						else
 						{
-							echo"<h1>BIENVENIDO ".$usuario."!!</h1><br/><br/>";
+							echo"<h1>BIENVENIDO <br/><span>".$usuario."</span></h1><br/><br/>";
 							echo"<h1 class='Inicio'><a href='Menu.php'>Vamos YA!!!</a></h1>";
 						}
 					}
 					else
 					{
 						echo "<h1>No existe el Usuario Introducido</h1>";
-						echo"<a href='sesion.php'>Volver a intentarlo</a>";
+						echo"<br/><br/><br/><br/>";
+						echo"<div>";
+						echo"	<b><a href='sesion.php'>Volver a intentarlo</a></b>";
+						echo"</div>";
 					}
 				}
 				else
 				{
 					echo "<h1>Contraseña o Nombre de Usuario no válid@(s).</h1>";
-					echo"<a href='sesion.php'>Volver a intentarlo</a>";
+					echo"<br/><br/><br/><br/>";
+					echo"<div>";
+					echo"	<b><a href='sesion.php'>Volver a intentarlo</a></b>";
+					echo"</div>";
 				}
 			}
 			else
 				echo "<h1>Error al conectar con la base de datos</h1>";
 echo"		<div>
-				<a href='inicio.php'>Inicio</a><br/><br/>
+				<b><a href='inicio.php'>Inicio</a></b><br/><br/>
 			</div>
 		</body>
 	</html>";

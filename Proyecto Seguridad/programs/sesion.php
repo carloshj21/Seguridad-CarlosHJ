@@ -4,10 +4,11 @@ echo"<!DOCTYPE html>
 		<head>
 			<title>Iniciar sesión</title>
 			<meta charset='UTF-8'/>
-			<link rel='stylesheet' type='text/css' href='../styles/.css'/>
+			<link rel='stylesheet' type='text/css' href='../styles/sesion.css'/>
 		</head>
 		<body>
-			<h1>Inicio de sesión</h1>
+			<img src='../resources/images/Iniciar sesion.png'/>
+			<br/><br/><br/><br/><br/><br/><br/>
 			<form action='sesionR.php' method='POST'>
 				<label>Nombre de usuario</label><br/>
 				<input type='text' size='30' maxlength='15' name='usu' required/>
@@ -17,9 +18,9 @@ echo"<!DOCTYPE html>
 				<br/><br/>
 				<input type='submit' value='Iniciar sesión'/>
 			</form>
-			<br/><br/><br/><br/>
+			<br/><br/><br/><br/><br/><br/>
 			<div>
-				<a href='inicio.php'>Inicio</a><br/><br/>
+				<b><a href='inicio.php'>Inicio</a></b><br/><br/>
 			</div>
 		</body>
 	</html>";

@@ -4,11 +4,12 @@ echo"<!DOCTYPE html>
 		<head>
 			<title>Inicio</title>
 			<meta charset='UTF-8'/>
-			<link rel='stylesheet' type='text/css' href='../styles/.css'/>
+			<link rel='stylesheet' type='text/css' href='../styles/inicio.css'/>
 		</head>
 		<body>
 			<h1>Proyecto Seguridad</h1>
 			<h3>Hernández Juárez Carlos</h3>
+			<br/><br/><br/><br/>
 			<div>
 				<a href='sesion.php'>Iniciar sesión</a><br/><br/>
 				<a href='registro.php'>Registrarse</a><br/><br/>

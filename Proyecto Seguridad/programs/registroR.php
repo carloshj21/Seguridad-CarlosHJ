@@ -1,6 +1,6 @@
 <?php
-	$usuario=$_GET['usuario'];
-	$contra=$_GET['contraseña'];
+	$usuario=$_POST['usuario'];
+	$contra=$_POST['contraseña'];
 	$usu='/^[A-z0-9@.-_]{1,15}$/';
 	$cont='/^[A-z0-9@.-_]{8,30}$/';
 	$valusu=preg_match($usu,$usuario);
@@ -20,8 +20,11 @@ echo"<!DOCTYPE html>
 		<head>
 			<title>Registro</title>
 			<meta charset='UTF-8'/>
+			<link rel='stylesheet' type='text/css' href='../styles/registro.css'/>
 		</head>
-		<body>";
+		<body>
+			<img src='../resources/images/registrar.png'/>
+			<br/><br/><br/><br/><br/><br/><br/>";
 			$conn=mysqli_connect('localhost','root','','seguridad');
 			if($conn)
 			{
@@ -32,8 +35,11 @@ echo"<!DOCTYPE html>
 					$numUsu=mysqli_num_rows($verificar_usuario);
 					if($numUsu>0)
 					{
-						echo "<h1>El ususario ya está registrado</h1><br/>";
-						echo "<a href='registro.php'>Volver a intentarlo</a>";
+						echo "<h1>El usuario ya está registrado</h1><br/>";
+						echo"<br/><br/><br/><br/>";
+						echo"<div>";
+						echo"	<b><a href='registro.php'>Volver a intentarlo</a></b>";
+						echo"</div>";
 					}
 					else
 					{
@@ -42,25 +48,34 @@ echo"<!DOCTYPE html>
 						if($resultado==FALSE)
 						{
 							echo "Error al registrarse<br/>";
-							echo"<a href='registro.php'>Volver a intentarlo</a>";
+							echo"<br/><br/><br/><br/>";
+							echo"<div>";
+							echo"	<b><a href='registro.php'>Volver a intentarlo</a></b>";
+							echo"</div>";
 						}
 						else
 						{
-							echo "Registro exitoso";
-							echo"<a href='sesion.php'>Iniciar sesión</a>";
+							echo"<h1>Registro exitoso</h1><br/>";
+							echo"<br/><br/><br/><br/>";
+							echo"<div>";
+							echo"	<b><a href='sesion.php'>Iniciar sesión</a></b>";
+							echo"</div>";
 						}
 					}
 				}
 				else
 				{
-					echo "<h1>Contraseña o Nombre de Usuario no válid@(s).</h1>";
-					echo"<a href='registro.php'>Volver a intentarlo</a>";
+					echo "<h1>Contraseña o Nombre de Usuario no válid@(s).</h1><br/>";
+					echo"<br/><br/><br/><br/>";
+					echo"<div>";
+					echo"	<b><a href='registro.php'>Volver a intentarlo</a></b>";
+					echo"</div>";
 				}
 			}
 			else
 				echo "<h1>Error al conectar con la base de datos</h1>";
 echo"		<div>
-				<a href='inicio.php'>Inicio</a><br/><br/>
+				<b><a href='inicio.php'>Inicio</a></b><br/><br/>
 			</div>
 		</body>
 	</html>";

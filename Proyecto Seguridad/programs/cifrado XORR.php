@@ -1,5 +1,5 @@
 <?php
-	$carac=$_GET['caracter'];
+	$carac=$_POST['caracter'];
 	function strToBin($input)
 	{
 		if (!is_string($input))

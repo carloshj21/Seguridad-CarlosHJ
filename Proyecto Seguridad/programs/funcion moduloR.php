@@ -1,6 +1,6 @@
 <?php
-	$n1=$_GET['numero1'];
-	$n2=$_GET['numero2'];
+	$n1=$_POST['numero1'];
+	$n2=$_POST['numero2'];
 	function modulo ($a,$b)
 	{
 		if($a<0)
