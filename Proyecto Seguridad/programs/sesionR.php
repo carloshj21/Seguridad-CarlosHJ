@@ -1,6 +1,6 @@
 <?php
-	$usuario=$_GET['usuario'];
-	$contra=$_GET['contraseña'];
+	$usuario=$_POST['usu'];
+	$contra=$_POST['contra'];
 	$usu='/^[A-z0-9@.-_]{1,15}$/';
 	$cont='/^[A-z0-9@.-_]{8,30}$/';
 	$valusu=preg_match($usu,$usuario);
@@ -18,7 +18,7 @@
 echo"<!DOCTYPE html>
 	<html lang='es'>
 		<head>
-			<title>Registro</title>
+			<title>Inicio de sesión</title>
 			<meta charset='UTF-8'/>
 		</head>
 		<body>";
@@ -32,29 +32,29 @@ echo"<!DOCTYPE html>
 					$numUsu=mysqli_num_rows($verificar_usuario);
 					if($numUsu>0)
 					{
-						echo "<h1>El ususario ya está registrado</h1><br/>";
-						echo "<a href='registro.php'>Volver a intentarlo</a>";
-					}
-					else
-					{
-						$insertar="INSERT INTO usuarios(NombreUsuario, contrasena) VALUES ('".$usuario."','".$cifcont."');";
-						$resultado= mysqli_query($conn,$insertar);
-						if($resultado==FALSE)
+						$verificar_contra = mysqli_query($conn,"SELECT * FROM usuarios WHERE contrasena = '".$cifcont."';");
+						$numCon=mysqli_num_rows($verificar_contra);
+						if($numCon==0)
 						{
-							echo "Error al registrarse<br/>";
-							echo"<a href='registro.php'>Volver a intentarlo</a>";
+							echo"<h1>La contraseña introducida no es correcta</h1>";
+							echo"<a href='sesion.php'>Volver a intentarlo</a>";
 						}
 						else
 						{
-							echo "Registro exitoso";
-							echo"<a href='sesion.php'>Iniciar sesión</a>";
+							echo"<h1>BIENVENIDO ".$usuario."!!</h1><br/><br/>";
+							echo"<h1 class='Inicio'><a href='Menu.php'>Vamos YA!!!</a></h1>";
 						}
+					}
+					else
+					{
+						echo "<h1>No existe el Usuario Introducido</h1>";
+						echo"<a href='sesion.php'>Volver a intentarlo</a>";
 					}
 				}
 				else
 				{
 					echo "<h1>Contraseña o Nombre de Usuario no válid@(s).</h1>";
-					echo"<a href='registro.php'>Volver a intentarlo</a>";
+					echo"<a href='sesion.php'>Volver a intentarlo</a>";
 				}
 			}
 			else

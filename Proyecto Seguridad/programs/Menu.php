@@ -18,7 +18,8 @@ echo"<!DOCTYPE html>
 				<a href='hash.php'>Práctica 7</a><br/><br/>
 				<a href='CURP.php'>CURP</a><br/><br/>
 				<a href='VISA.php'>VISA</a><br/><br/>
-				<a href='Vigenere.php'>Vigenère</a>
+				<a href='Vigenere.php'>Vigenère</a><br/><br/>
+				<a href='sesion.php' style='color:blue;'>Salir</a>
 			</div>
 		</body>
 	</html>";
