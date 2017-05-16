@@ -2,7 +2,7 @@
 	$cad=$_POST['texto'];
 	$llave=$_POST['llave'];
 	$valcad='/^[a-z]{1,30}$/';
-	$valllave='/^[0-3a-c]{1}$/';
+	$valllave='/^[1-3a-c]{1}$/';
 	$cad2=preg_match($valcad,$cad);
 	$llave2=preg_match($valllave,$llave);
 	$arre1=array('0'=>0,'1'=>1,'2'=>2,'3'=>3,'a'=>4,'b'=>5,'c'=>6,);

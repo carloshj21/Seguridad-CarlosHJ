@@ -21,4 +21,54 @@ echo"		<h1>Playfair-n</h1>
 			</div>
 		</body>
 		</html>";
+	/*function playfair($str, $n)
+	{
+		$arre=array();
+		$arref = array();
+		$fin=array();
+		$x=0;
+		$str=str_split($str,$n);
+		foreach($str as $pal)
+		{
+			$arre[]=$pal;
+			$arre2=str_split($arre["$x"]);
+			$arref[]=$arre2;
+			$x++;
+		}
+		for($x=0;$x<$n;$x++)
+			foreach ($arref as $play => $let) 
+			{
+				$fin[]=$let[$x];
+				$pro=implode('', $fin);
+			}
+	    echo $pro."<br/>";
+	}
+	function playfairinv($str, $n)
+	{
+		$arre=array();
+		$arref = array();
+		$fin=array();
+		$x=0;
+		$str=str_split($str,$n);
+		foreach($str as $pal)
+		{
+			$arre[]=$pal;
+			$arre2=str_split($arre["$x"]);
+			$arref[]=$arre2;
+			$x++;
+		}
+		for($x=$n;$x>=0;$x--)
+			foreach ($arref as $play => $let) 
+			{
+				$fin[]=$let[$x];
+				$pro=implode('', $fin);
+			}
+	    echo $pro."<br/>";
+	}
+	echo "Practica de playfair (Arriba a la izquierda y de arriba a la derecha)<br/>";
+	  	$n=7;
+		$pal='hola mundo, como esta';
+		playfair($pal, $n);
+		echo "<br/>";
+		playfairinv($pal, $n);*/
 ?>
