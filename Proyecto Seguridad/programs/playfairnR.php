@@ -21,7 +21,7 @@ echo"<!DOCTYPE html>
 				$div=$len/$numero;
 				$div2=ceil($div);
 				$y=0;
-				$matr=[];
+				$matr=array();
 				for($x=0;$x<$div2;$x++)
 				{
 					$cx=substr($cadena,$y,$numero);

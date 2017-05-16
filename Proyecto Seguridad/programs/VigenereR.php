@@ -2,7 +2,7 @@
 	$cad=$_POST['texto'];
 	$llave='PROYECTOSEGURIDADCARLOSHVIGENE';
 	//$llave=$_POST['llave'];
-	$valcad='/^[A-Z]{30}$/';
+	$valcad='/^[A-Z]{1,30}$/';
 	//$valllave='/^[A-Z]{1,30}$/';
 	$cad2=preg_match($valcad,$cad);
 	//$llave2=preg_match($valllave,$llave);
@@ -22,7 +22,7 @@ echo"<!DOCTYPE html>
 				echo"<br/><br/><br/>";
 				echo"<h1>Mensaje cifrado (con la llave 'PROYECTOSEGURIDADCARLOSHVIGENE')</h1>";
 				$len=strlen($cad);
-				$cif=[];
+				$cif=array();
 				for($x=0;$x<$len;$x++)
 				{
 					$corx=substr($cad,$x,1);
