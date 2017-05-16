@@ -69,7 +69,7 @@ echo"<!DOCTYPE html>
 				}
 			}
 			else
-				echo"<h1>Lo qué introdujiste no corresponde al número de una VISA</h1>";
+				echo"<h1>Lo que introdujiste no corresponde al número de una VISA</h1>";
 echo"		<br/><br/><br/><br/><br/><br/>
 			<div>
 				<a href='VISA.php'>Volver a intentarlo</a>
