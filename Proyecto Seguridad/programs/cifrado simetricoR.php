@@ -21,7 +21,7 @@ echo"<!DOCTYPE html>
 				echo "<h1>Mensaje Cifrado</h1>";
 				$len=strlen($cad);
 				$cam=strtr($llave,$arre1);
-				$cif=[];
+				$cif=array();
 				for($x=0;$x<$len;$x++)
 				{
 					$corx=substr($cad,$x,1);
