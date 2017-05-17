@@ -38,7 +38,7 @@ echo"<!DOCTYPE html>
 			}
 			else
 			{
-				echo"<h1>Texto introducido no válido. Es necesario introducir 30 caracteres, SOLO MAYÚSCULAS.</h1>";
+				echo"<h1>Texto introducido no válido.Máximo 30 caracteres, SOLO MAYÚSCULAS.</h1>";
 			}
 echo"		<br/><br/><br/>";
 echo"		<div>
